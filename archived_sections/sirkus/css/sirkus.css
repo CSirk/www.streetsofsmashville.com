@@ -1,0 +1,81 @@
+/* navbar */
+.navbar-default {
+    background-color: black;
+    font-family: yugothiclight;
+    border: 0px;
+    
+}
+/* title */
+.navbar-default .navbar-brand {
+    text-shadow: 2px 1px 0 #0000;
+    color: white;
+    font-size: 30px;
+    
+}
+
+/*Hover over title*/
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: white;
+    color: black;
+}
+/* link text on navbar*/
+.navbar-default .navbar-nav > li > a {
+    text-shadow: 0px 1px 0 #0000;
+    color: white;
+    font-size : 20px;
+}
+
+/*Hover over link item*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: white;
+    color: black;
+}
+
+/*Color of clicked navbar dropdown*/
+.navbar .navbar-nav > li.open > a:hover,
+.navbar .navbar-nav > li.open > a:focus {
+  background-color: white;
+  color: black;
+}
+
+/*Color of menu items when dropdown is clicked*/
+.navbar-default .navbar-nav .open .dropdown-menu>li>a, 
+.navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: black;
+    color:white;
+  }
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+#top, #bottom, #left, #right {
+	background: black;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 50px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 50px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+body {
+    background-color: white; 
+}
+
+@font-face {
+    font-family: yugothiclight;
+    src: url("/sirkus/fonts/yugothil.ttf");
+}

@@ -1,0 +1,70 @@
+/* navbar */
+.navbar-default {
+    background-color: black;
+    border: 0px;
+    
+}
+/* title */
+.navbar-default .navbar-brand {
+    text-shadow: 2px 1px 0 #0000;
+    color: white;
+    font-size: 30px;
+    
+}
+
+/*Hover over title*/
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: rgb(0, 0, 225);
+    color: white;
+}
+/* link text on navbar*/
+.navbar-default .navbar-nav > li > a {
+    text-shadow: 0px 1px 0 #0000;
+    color: white;
+    font-size : 20px;
+}
+
+/*Hover over link item*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: rgb(0, 0, 225);
+    color: white;
+}
+
+/*Color of clicked navbar dropdown*/
+.navbar .navbar-nav > li.open > a:hover,
+.navbar .navbar-nav > li.open > a:focus {
+  background-color: rgb(0, 0, 225);
+  color: white;
+}
+
+.navbar .navbar-nav > li > a:hover{
+    background-color: rgb(0, 0, 225);
+}
+
+/*Color of menu items when dropdown is clicked*/
+.navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: black;
+    color:white;
+  }
+
+
+/*Dropdown link*/
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+     background-color: black;
+    color: white;
+}
+
+/*dropdown link hover color*/
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+     background-color: rgb(0, 0, 225);
+    color: white;
+}
+
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}

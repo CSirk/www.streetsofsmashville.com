@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.centeredpageimage{
+    margin-left: 25vw;
+}
+
+img{
+    width: 50vw;
+    height: 90vh;
+}
