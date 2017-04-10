@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Git Setup</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.streetsofsmashville.com/_common/css/streetsofsmashville.css" type="text/css">
+        <base href="http://www.code.streetsofsmashville.com">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script> 
+            $(function(){
+                $("#header").load("/common/views/header.html"); 
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div id="header"></div>
+
+            
+            <h3>Prerequisites : <a href="https://git-scm.com/downloads" target="_blank">Git Bash</a></h3>
+            <h5><b>Bold Denotes a command in gitbash</b></h5>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                New Machine Setup With Existing Github Account</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ol>
+                                <li><b>git config --global user.name "Your Name"</b></li>
+                                <li><b>git config --global user.email "Your Email"</b></li>
+                                <li><b>ssh-keygen -t rsa -b 4096 -C "Your Email"</b></li>
+                                <li>Hit enter for default location</li>
+                                <li>Enter password</li>
+                                <li>Confim password</li>
+                                <li><b>eval $(ssh-agent -s)</b></li>
+                                <li><b>ssh-add ~/.ssh/id_rsa</b></li>
+                                <li>Enter Password</li>
+                                <li>Enter ssh key into github keys area</li>
+                                <li><b>clip &lt; ~.ssh/id_rsa.pub</b></li>
+                                <li>if this doesnt work then specify full path that ssh/id_rsa.pub lives in
+                                    for example: /c/user/username/.ssh/id_rsa.pub</li>
+                                <li>Go to github settings page and add new key, name it whatever and paste clipboard in and save</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                    Pushing Local Code to a New GitHub Repository</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ol>
+                                    <li>Go to directory where code lives</li>
+                                    <li><b>git init</b></li>
+                                    <li><b>git add .</b></li>
+                                    <li><b>git commit -m "initial commit"</b></li>
+                                    <li><b>git remote add origin https://github.com/UserName/RepoName</b></li>
+                                    <li><b>git remote -v</b> (this verifies you are pointed to the remote)</li>
+                                    <li><b>git push origin master</b></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
