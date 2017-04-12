@@ -152,32 +152,6 @@
                         </div>
                     </div>
                 </div>
-                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                                Handling Merge Conflicts</a>
-                        </h4>
-                    </div>
-                    <div id="collapse6" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <ul>
-                                <h4>Its going to happen. You will pull latest from origin and you will be told you have merge conflicts. Here's how to deal with it.</h4>
-                                <ol>
-                                    <li>Look in the output where a merge conflict has occurred and find the file(s) which are conflicted.</li>
-                                    <li>Go into each file in your prefered editor and look for &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD . This is the start of the merge conflict.<i></i></li>
-                                    <li>The code between &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD and ======= is your personal code which is in your current branch.</li>
-                                    <li>The code between ======= and &gt;&gt;&gt;&gt;&gt;&gt;&gt; random423454characters  is the current version of the code in master.</li>
-                                    <li>You should look at your local code (which is often the correct change due to your new feature branch having the most up to date code for your changes) and compare it to the code in master.</li>
-                                    <li>Once you have determined which version of code is correct (or determined a hybrid block of code to use) you can simply delete the changes you dont want and save the file.</li>
-                                    <li>Once you have done this process for each conflicted file you will need to do the following: <b>git add .</b> OR <b>git add fileNameOfConflictedFileYouChanged</b> then <b>git commit -m "message you wish to use"</b> then <b>git push origin YourBranchName</b></li>
-                                    <li>You may wish to pull master again to be sure you have all the up to date code using <b>git pull origin master</b></li>
-                                    <li>Boom. Conflit resolved.</li>
-                                </ol>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </body>
