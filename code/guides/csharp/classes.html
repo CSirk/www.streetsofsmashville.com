@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>C# Classes</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.streetsofsmashville.com/_common/css/streetsofsmashville.css" type="text/css">
+        <link rel="stylesheet" href="css/classes.css" type ="text/css">
+        <base href="http://www.code.streetsofsmashville.com">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script> 
+            $(function(){
+                $("#header").load("/common/views/header.html"); 
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div id="header"></div>
+            <h1><u>C# Tutorials</u></h1>
+            <h3>C# : Classes</h3>
+            <h4><i>C# is an Object Oriented Programming Language, meaning the majority of things you will do will involve objects, which are used to model data. A class is a grouping of properties, methods, and other data which allows you to create objects with the class as a blueprint. For example. Lets say that you would like to model a person in code, a class is the way to do that. A Person has attributes associated with them such as number of eyes, number of legs, a name, age, and actions they can performs such as walking or swimming. A class can put this person with these attributes into your program and you can interact with the person as an object. Rather than talk about how this is possible in words, lets build an appliction and insert this person into it!</i></h4>
+            <br>
+            <p>Note: <b>Keywords are written in this style</b> and <code>code is written in this style</code></p>
+            <div class="sbscontentandpic">
+                <ol>
+                    <li>Start Visual Studio</li>
+                    <li>Go to <b>File > New Project > C# Console Application</b></li>
+                    <li>Name the solution and project anything you like (for example: ClassesTutorial) and save. (This will generate your project and load <b>Program.cs</b></li>
+                    <li>Right click on your project and go to <b>Project > Add > New Item > Class</b> and name this class <b>Person</b>. Press ok to generate the new class file. This should load the new class onto your screen.</li>
+                    <li>Make the following change to your class's code:</li>
+                    <p>add the word <code>public</code> in front of the class name.</p>
+                    <li>Add the following lines to your code file:</li> 
+                    <p><code>public string Name { get; set; }</code></p>
+                    <p><code>public int Age { get; set; }</code></p>
+                    <p><code>public int NumberOfLegs { get; set; }</code></p>
+                    <p><code>public int NumberOfEyes { get; set; }</code></p>
+                    <p><code>public int Walk(int numberOfLegs, int steps);</code></p>
+                    <p><code>public void Swim();</code></p>
+                    <li>Go back to your <b>Program.cs</b> file and inside the <b>Main</b> method and type:</li>
+                    <p><code>Person person1 = new Person();</code></p>
+                    <li>Under this line of code, type the following:</li>
+                    <p><code>person1.Name = "Cody";</code></p>
+                    <p><code>person1.Age = 24;</code></p>
+                    <p><code>person1.NumberOfLegs = 2;</code></p>
+                    <p><code>person1.NumberOfEyes = 2;</code></p>
+                    <p>So far we have made an object of type "Person" and given it a name, age, and told the number of eyes and legs the person has, but we dont have anything to show for it! We need to print to the screen to get some meaningful output about the person.</p>
+                    <li>Under the code you just wrote, write the line:</li>
+                    <p><code>Console.WriteLine($"Hello, I am {person1.Name}. I am {person1.Age}. How many eyes and legs do i have? What a weird question.. obviously I have {person1.NumberOfLegs} legs and {person1.NumberOfEyes} eyes.");</code></p>
+                    <p><code>Console.ReadKey();</code></p>
+                    <p>Alright! So now when you run the appliction you will learn a little bit of information about your person you created! Lets make this a little more interesting for our person, after all.. he did call us weird for asking about how many legs and eyes he has. Lets give him a little competition and see how he stacks up against another person we create! First lets make the creation of another person a little easier on ourselves by making a constructor for the class so we can feed the object data as it is created.</p>
+                    <li>Go back the the <b>Person.cs</b> class and type the following above the properties and methods we added:</li>
+                    <p><code>public Person() { }</code></p>
+                    <p><code>public Person(string name, int age, int numberOfLegs, int numberOfEyes = 2)</code></p>
+		            <p><code>{</code></p>
+                    <p><code>this.Name = name;</code></p>
+                    <p><code>this.Age = age;</code></p>
+                    <p><code>this.NumberOfLegs = numberOfLegs;</code></p>
+                    <p><code>this.NumberOfEyes = numberOfEyes</code></p>
+                    <p><code>}</code></p>
+                    <p>This constructor will allow us to pass in the values for the person without having to do so line by line. There are many ways to hydrate an object of a class and we will go into a few more later in the tutorial.</p>
+                    <li>Go back to <b>Main.cs</b> and type the following after the declaration of the last person variable</li>
+                    <p><code>var person2 = new Person("BetterCody", person1.age + 1, person1.NumberOfLegs + 3, person1.NumberOfEyes + 50);</code></p>
+                    <p>We have done a little constructor magic here and have created a person who is better than cody in every way. Notice that we took cody's (our person1 variable) and added to each property to pass values to the constructor. It would have been just as easy to instantiate the new person with the code line: var person2 = new Person("BetterCody", 25, 3, 3); , but the way we did it allows the new and improved cody to always be better than the old cody because we use his own values and then add to them: if cody's number of eyes changes so does our better Cody's number of eyes.. no matter what cody does better cody will always be better. darn. Now i feel bad. Lets make another person who will lose to cody in our contest in a few minutes. This time we will declare him in a different way than with a constructor or line by line, we will use an inline declaration.</p>
+                    <li>Type the following into main.cs after person2 is declared.</li>
+                    <p><code>var lesserCody = new Person { Name = "Lesser Cody", Age = 3, NumberOfLegs = 0, NumberOfEyes = 1 };</code></p>
+                    <li>Type the following:</li>
+                    <p><code>Console.WriteLine("Cody, I challenge you to a race.");</code></p>
+                    <p><code>Console.WriteLine($"{person1.Name} : who said that?");</code></p>
+                    <p><code>Console.WriteLine($"{person2.Name} : I did.");</code></p>
+                    <p><code>Console.WriteLine($"{lesserCody.Name} : I also want to participate in the race.");</code></p>
+                    <p><code>Console.WriteLine("Press any key to start the race.");</code></p>
+                    <p><code>Console.ReadKey();</code></p>
+                    <p><code>Console.WriteLine($"");</code></p>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>
