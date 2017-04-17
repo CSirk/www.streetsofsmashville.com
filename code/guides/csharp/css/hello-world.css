@@ -1,7 +1,11 @@
 #halfimage {
-    max-width: 30vh;
+    max-width: 80vh;
 }
 
 .toppadrow{
     margin-top: 4vh;
+}
+
+p {
+    font-size: 20px;
 }
