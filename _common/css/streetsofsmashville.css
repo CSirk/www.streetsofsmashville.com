@@ -1,3 +1,8 @@
+/*Global HTML----------------------------------*/
+html {
+    background-color: black;
+}
+/*END Globlal HTML*/
 
 /*Panels-------------------------------------*/
 .panel-default > .panel-heading{
