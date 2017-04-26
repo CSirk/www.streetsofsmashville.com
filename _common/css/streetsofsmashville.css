@@ -1,3 +1,23 @@
+
+/*Panels-------------------------------------*/
+.panel-default > .panel-heading{
+    color:white;
+    background-color: blue;
+}
+
+.panel-group .panel-heading {
+    color: white;
+    background-color: blue;
+}
+
+.panel-title {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+/*END PANELS*/
+
+/*Navigation Bar--------------------------------------------------------------------------------------------------------*/
 /* navbar */
 .navbar-default {
     background-color: black;
@@ -15,7 +35,7 @@
 /*Hover over title*/
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    background-color: rgb(0, 0, 225);
+    background-color: blue;
     color: white;
 }
 /* link text on navbar*/
@@ -28,19 +48,19 @@
 /*Hover over link item*/
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: rgb(0, 0, 225);
+    background-color: blue;
     color: white;
 }
 
 /*Color of clicked navbar dropdown*/
 .navbar .navbar-nav > li.open > a:hover,
 .navbar .navbar-nav > li.open > a:focus {
-  background-color: rgb(0, 0, 225);
+  background-color: blue;
   color: white;
 }
 
 .navbar .navbar-nav > li > a:hover{
-    background-color: rgb(0, 0, 225);
+    background-color: blue;
 }
 
 /*Color of menu items when dropdown is clicked*/
@@ -58,7 +78,7 @@
 
 /*dropdown link hover color*/
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-     background-color: rgb(0, 0, 225);
+     background-color: blue;
     color: white;
 }
 
@@ -68,3 +88,4 @@
     border-top-color: white;
     border-bottom-color: white;
 }
+/*End Navigation Bar--------------------------------------------------------------------------------------------------------*/
