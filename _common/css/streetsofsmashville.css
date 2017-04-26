@@ -12,8 +12,12 @@
 
 .panel-title {
     color: white;
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
+}
+
+.panel-body {
+    font-size: 16px;
 }
 /*END PANELS*/
 
