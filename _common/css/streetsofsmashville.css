@@ -1,100 +1,29 @@
-/*Global HTML----------------------------------*/
-html {
+/* Navbar */
+.nav-wrapper{
+    background-color: #0000ae;
+}
+
+/* Sidebar Background Color */
+nav ul li {
+    background-color: #0000ae;
+}
+
+/* Sidebar Text Color */
+.side-nav a {
+    color: white;
+}
+
+/* Hover Main Title */
+nav .brand-logo:hover {
     background-color: black;
 }
-/*END Globlal HTML*/
 
-/*Panels-------------------------------------*/
-.panel-default > .panel-heading{
-    color:white;
-    background-color: blue;
+/* Hover Side Link Color */
+nav ul li:hover {
+   background-color: black;
 }
 
-.panel-group .panel-heading {
-    color: white;
-    background-color: blue;
+/* Hover Right Link Color */
+.nav-wrapper:hover {
+    color:black;
 }
-
-.panel-title {
-    color: white;
-    font-size: 26px;
-    text-align: center;
-}
-
-.panel-body {
-    font-size: 16px;
-}
-/*END PANELS*/
-
-/*Navigation Bar--------------------------------------------------------------------------------------------------------*/
-/* navbar */
-.navbar-default {
-    background-color: black;
-    border: 0px;
-    
-}
-/* title */
-.navbar-default .navbar-brand {
-    text-shadow: 2px 1px 0 #0000;
-    color: white;
-    font-size: 30px;
-    
-}
-
-/*Hover over title*/
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    background-color: blue;
-    color: white;
-}
-/* link text on navbar*/
-.navbar-default .navbar-nav > li > a {
-    text-shadow: 0px 1px 0 #0000;
-    color: white;
-    font-size : 20px;
-}
-
-/*Hover over link item*/
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    background-color: blue;
-    color: white;
-}
-
-/*Color of clicked navbar dropdown*/
-.navbar .navbar-nav > li.open > a:hover,
-.navbar .navbar-nav > li.open > a:focus {
-  background-color: blue;
-  color: white;
-}
-
-.navbar .navbar-nav > li > a:hover{
-    background-color: blue;
-}
-
-/*Color of menu items when dropdown is clicked*/
-.navbar-default .navbar-nav .open .dropdown-menu {
-    background-color: black;
-    color:white;
-  }
-
-
-/*Dropdown link*/
-.navbar-default .navbar-nav .open .dropdown-menu>li>a{
-     background-color: black;
-    color: white;
-}
-
-/*dropdown link hover color*/
-.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-     background-color: blue;
-    color: white;
-}
-
-
-/* caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: white;
-    border-bottom-color: white;
-}
-/*End Navigation Bar--------------------------------------------------------------------------------------------------------*/

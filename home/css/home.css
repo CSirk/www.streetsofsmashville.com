@@ -1,13 +1,8 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-
-.nav-wrapper{
-    background-color: navy;
+    background-image: url("/home/img/preds.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
 }
+
+
+
