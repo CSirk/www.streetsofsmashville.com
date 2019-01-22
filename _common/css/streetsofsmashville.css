@@ -27,3 +27,12 @@ nav ul li:hover {
 .nav-wrapper:hover {
     color:black;
 }
+
+/* Dropdown links */
+.dropdown-content li>a {
+    color: white;
+}
+
+.dropdown-content li>a:hover {
+    background-color: black;
+}
