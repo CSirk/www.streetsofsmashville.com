@@ -1,22 +1,68 @@
-<div class="container-fluid">
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">  
-            <a class="navbar-brand" href="http://www.streetsofsmashville.com">Streets of Smashville</a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button> 
-        </div>
-        <div class="collapse navbar-collapse" id="bs-nav">
-            <ul class="nav navbar-nav">
-                <li><a href="/index.html">Code.Streets</a></li>
-                <li><a href="/applications/index.html">Applications</a></li>
-                <!--<li><a href="#">Games</a></li>-->
-                <li><a href="/guides/index.html">Guides</a></li>
-                <!--<li><a href="#">Articles</a></li>-->
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="https://www.streetsofsmashville.com" class="brand-logo">Streets of Smashville</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/apps.html">Apps</a></li>
                 <li><a href="/downloads.html">Downloads</a></li>
+                <li><a href="/guides/index.html">Guides</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="musclesdropdown1">Muscles<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="/nutrition/index.html">Nutrition</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="workoutsplitsdropdown1">Workout Splits<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/apps.html">Apps</a></li>
+                <li><a href="/downloads.html">Downloads</a></li>
+                <li><a href="/guides/index.html">Guides</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="musclesdropdown2">Muscles<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="/nutrition/index.html">Nutrition</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="workoutsplitsdropdown2">Workout Splits<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+            <!-- Dropdown Structure -->
+            <ul id="musclesdropdown1" class="dropdown-content">
+                <li><a href="/weightlifting/guides/abs.html">Abs</a></li>
+                <li><a href="/weightlifting/guides/back.html">Back</a></li>
+                <li><a href="/weightlifting/guides/biceps.html">Biceps</a></li>
+                <li><a href="/weightlifting/guides/calves.html">Calves</a></li>
+                <li><a href="/weightlifting/guides/chest.html">Chest</a></li>
+                <li><a href="/weightlifting/guides/hamstrings.html">Hamstrings</a></li>
+                <li><a href="/weightlifting/guides/neck.html">Neck</a></li>
+                <li><a href="/weightlifting/guides/shoulders.html">Shoulders</a></li>
+                <li><a href="/weightlifting/guides/traps.html">Traps</a></li>
+                <li><a href="/weightlifting/guides/triceps.html">Triceps</a></li>
+                <li><a href="/weightlifting/guides/quadriceps.html">Quads</a></li>
+            </ul>
+            <ul id="musclesdropdown2" class="dropdown-content">
+                <li><a href="/weightlifting/guides/abs.html">Abs</a></li>
+                <li><a href="/weightlifting/guides/back.html">Back</a></li>
+                <li><a href="/weightlifting/guides/biceps.html">Biceps</a></li>
+                <li><a href="/weightlifting/guides/calves.html">Calves</a></li>
+                <li><a href="/weightlifting/guides/chest.html">Chest</a></li>
+                <li><a href="/weightlifting/guides/hamstrings.html">Hamstrings</a></li>
+                <li><a href="/weightlifting/guides/neck.html">Neck</a></li>
+                <li><a href="/weightlifting/guides/shoulders.html">Shoulders</a></li>
+                <li><a href="/weightlifting/guides/traps.html">Traps</a></li>
+                <li><a href="/weightlifting/guides/triceps.html">Triceps</a></li>
+                <li><a href="/weightlifting/guides/quadriceps.html">Quads</a></li>
+            </ul>
+            <ul id="workoutsplitsdropdown1" class="dropdown-content">
+                <li><a href="/splits/threedayweightlifting.html">3 Day Weightlifting Split</a></li>
+                <li><a href="/splits/fourdayweightlifting.html">4 Day Weightlifting Split</a></li>
+                <li><a href="/splits/fivedayweightlifting.html">5 Day Weightlifting Split</a></li>
+            </ul>
+            <ul id="workoutsplitsdropdown2" class="dropdown-content">
+                <li><a href="/splits/threedayweightlifting.html">3 Day Weightlifting Split</a></li>
+                <li><a href="/splits/fourdayweightlifting.html">4 Day Weightlifting Split</a></li>
+                <li><a href="/splits/fivedayweightlifting.html">5 Day Weightlifting Split</a></li>
             </ul>
         </div>
     </nav>
 </div>
+
+<script>
+    $(".button-collapse").sideNav();
+    $(".dropdown-button").dropdown();
+</script>
